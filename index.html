@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
      <meta name=viewport content="width=device-width, initial-scale=1">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Roboto:wght@300&display=swap" rel="stylesheet">
      <title> Responsive Layout</title>
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 
 <body>
 <div class ="container">
 <header>    
-     <h1 class="name"><a href="#">Student Name</a></h1>
+     <h1 class="name">Student Name</h1>
 <ul class = "main-nav">
      <li><a href="#">Home</a></li>
-     <li><a href="#">Portfolio</a></li>
-     <li><a href="#">Contact</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#skills">Skills</a></li>
+     <li><a href="#contact">Contact</a></li>
 </ul>
 <section class = "profile">
 <img src="images/responsive-layout-profile.png" alt="Responsive Layout" class="responsive-image">
@@ -24,39 +29,77 @@
 
 
 <main>
-     <div class=" imgs">
-          <h2>Portfolio</h2>
+     <h1 id="portfolio">Portfolio</h1>
+     <section class=" imgs">
 
-          <img src="images/portfolio-1.png" alt="Marketing page image">
-          <h2>Marketing Page</h2>
-          <p>The project shows the front page of a marketing website meant for a specific business i'm interested in.</p>
+          <div class="wrapper-content">     
+               <img src="images/portfolio-1.png" alt="Marketing page image">
+               <h2>Marketing Page</h2>
+               <p>The project shows the front page of a marketing website meant for a specific business i'm interested in.</p>
+          </div>
 
-          <img src="images/portfolio-2.png" alt="search page image"> 
-          <h2>Search page</h2>
-          <p> This project searches through a specific database to find information that the user is trying to look up.</p>
+          <div class="wrapper-content">
+               <img src="images/portfolio-2.png" alt="search page image"> 
+               <h2>Search page</h2>
+               <p> This project searches through a specific database to find information that the user is trying to look up.</p>
+          </div>   
 
-          <img src="images/portfolio-3.png" alt="travel app image">
-          <h2>Travel App</h2>
-          <p>This project compares travel times based on diffrent transportation methods and tells you the best one.</p>
+          <div class="wrapper-content">
+               <img src="images/portfolio-3.png" alt="travel app image">
+               <h2>Travel App</h2>
+               <p>This project compares travel times based on diffrent transportation methods and tells you the best one.</p>
+          </div>
 
-          <img src="images/portfolio-4.png" alt="map of favorite spots image"> 
-          <h2>Map of favorite Spots</h2>
-          <p>This project uses mapping apis to plot point for my favorite spots in the city for a do it yourself walking tour.</p>
+          <div class="wrapper-content">
+               <img src="images/portfolio-4.png" alt="map of favorite spots image"> 
+               <h2>Map of favorite Spots</h2>
+               <p>This project uses mapping apis to plot point for my favorite spots in the city for a do it yourself walking tour.</p>
+          </div>
 
-          <img src="images/portfolio-5.png" alt="photo gallery image">
-          <h2>Photo Gallery</h2>
-          <p>This project shows picture from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          <div class="wrapper-content">
+               <img src="images/portfolio-5.png" alt="photo gallery image">
+               <h2>Photo Gallery</h2>
+               <p>This project shows picture from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+               </div>
 
-          <img src="images/portfolio-6.png" alt="Calculator image">
-          <h2>Calculator</h2>
-          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-</div>
-<section class="contacts-box">
+          <div class="wrapper-content">
+               <img src="images/portfolio-6.png" alt="Calculator image">
+               <h2>Calculator</h2>
+               <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+          </div>
+
+
+          <section id="skills">
+               <div  class="skills">
+                   <h3>My Skills</h3>
+                   <p>
+                       I acrually dont want to give out to much information about myself.
+                       I can repair any electronic, I love to learn code and want this to be my carrier.
+                   </p>
+                   <p>
+                       Currently a web deveroper for front work. I also know a bit of game development mainly on unity and unreal. using c++.
+                   </p>
+                   <p>
+                       <span id="signature">Adrian O. Flores</span>
+                   </p>
+               </div>
+           </section>
+
+
+
+
+
+
+
+
+
+     </section>
+<section id="contact" class="contacts-box">
      <h3>Contact</h3>
      <p>if you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 <ul>
-     <li><a href ="tel:7133989870">Phone 713-398-9870</a></li>
-     <li><a href ="mailto:floresadrian153@gmail.com" >Email</a></li>
+     <li><a href ="tel:123-456-7890">Phone 123-456-7890</a></li>
+     <li><a href ="mailto:fakemail@gmail.com" >Email</a></li>
 </ul>
 </section>
 </main>
@@ -65,6 +108,6 @@
 <a href="#">Back to top</a>
 </footer>
 
-
+</div>
 </body>
 </html>
